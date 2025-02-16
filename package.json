@@ -1,0 +1,33 @@
+{
+  "name": "eth-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "eth-website",
+  "author": "oiver12",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "gatsby": "^5.14.1",
+    "gatsby-plugin-postcss": "^6.14.0",
+    "postcss": "^8.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^4.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "typescript": "^5.3.3"
+  }
+}
