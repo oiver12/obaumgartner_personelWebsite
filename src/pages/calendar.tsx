@@ -1,16 +1,17 @@
 // CalendarPage.tsx
+
+import moment from "moment";
 import React, { useReducer, useState, useEffect } from "react";
 import {
   Calendar,
   momentLocalizer,
   Event as RbcEvent,
 } from "react-big-calendar";
-import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import ICAL from "ical.js";
+import { LectureModal, SeriesModal } from "../components/CalendarModals";
 import Layout from "../components/Layout";
 import { LecturesOverview } from "../components/LectureOverwiev";
-import { LectureModal, SeriesModal } from "../components/CalendarModals";
+import ICAL from "ical.js";
 
 const localizer = momentLocalizer(moment);
 
@@ -399,6 +400,7 @@ const CalendarPage: React.FC = () => {
                 localizer={localizer}
                 events={displayEvents}
                 startAccessor="start"
+                defaultView="week"
                 endAccessor="end"
                 style={{ flexGrow: 1, minHeight: "100vh", width: "100%" }}
                 views={["month", "week", "day"]}

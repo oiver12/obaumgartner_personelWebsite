@@ -1,6 +1,6 @@
-import React from "react";
-import { Link, navigate } from "gatsby";
 import { useLocation } from "@reach/router";
+import { Link, navigate } from "gatsby";
+import React from "react";
 
 const navbarStyles = {
   display: "flex",

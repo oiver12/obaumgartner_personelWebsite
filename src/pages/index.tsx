@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Link } from "gatsby";
-import mainPicture from "../images/background.jpg";
-import SketchWrapper from "../components/sketchWrapper";
 import sketch from "../components/FourierName";
 import Layout from "../components/Layout";
+import SketchWrapper from "../components/sketchWrapper";
+import mainPicture from "../images/background.jpg";
+import { Link } from "gatsby";
+import * as React from "react";
 
 const bannerStyles: React.CSSProperties = {
   width: "100%",
@@ -133,6 +133,8 @@ const IndexPage: React.FC = () => {
           </a>
         </p>
       </div>
+      {/* add vertical spacer */}
+      <div style={{ height: "50px" }}></div>
     </Layout>
   );
 };

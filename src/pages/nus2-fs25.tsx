@@ -1,9 +1,9 @@
+import Layout from "../components/Layout";
+import WeekMaterial from "../components/WeekMaterial";
+import { Link } from "gatsby";
 import * as React from "react";
 import { CSSProperties } from "react";
-import WeekMaterial from "../components/WeekMaterial";
-import Layout from "../components/Layout";
 import { FaMapMarkerAlt, FaClock, FaBolt } from "react-icons/fa";
-import { Link } from "gatsby";
 
 const pageStyles: CSSProperties = {
   color: "#232129",
@@ -89,16 +89,16 @@ const weeks = [
       </Link>
     ),
   },
-  // {
-  //   week: "Week 3",
-  //   materialLink: "#", // Placeholder
-  //   zusatzLink: "#", // Placeholder
-  // },
-  // {
-  //   week: "Week 4",
-  //   materialLink: "#", // Placeholder
-  //   zusatzLink: "#", // Placeholder
-  // },
+  {
+    week: "Week 3",
+    materialLink: "/~obaumgartner/NuS2_FS25/Übung03_Leer.pdf",
+    zusatzLink: "/~obaumgartner/NuS2_FS25/Übung03_Lsg.pdf",
+  },
+  {
+    week: "Week 4",
+    materialLink: "/~obaumgartner/NuS2_FS25/Übung04_Leer.pdf",
+    zusatzLink: "/~obaumgartner/NuS2_FS25/Übung04_Lsg.pdf",
+  },
   // {
   //   week: "Week 5",
   //   materialLink: "#", // Placeholder

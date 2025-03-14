@@ -1,5 +1,7 @@
-import React, { ReactNode } from "react";
+import FooterSection from "./Footer";
 import Navbar from "./Navbar";
+// Fix the import path
+import React, { ReactNode } from "react";
 
 const layoutStyles: React.CSSProperties = {
   display: "flex",
@@ -31,6 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <div style={layoutStyles}>
       <Navbar />
       <main style={pageStyles}>{children}</main>
+      <FooterSection />
     </div>
   );
 };
